@@ -1,0 +1,18 @@
+<div>
+    <div style="margin: 0 auto; width: 400px">
+        <img src="media/logo.gif" alt="">
+
+        <p>Please select a model to view its Model Summary:</p>
+        <ui-select ng-model="obs.selectedModel" theme="selectize" ng-disabled="disabled"
+                   style="width: 300px;">
+            <ui-select-match placeholder="Select or search a model in the list...">{{$select.selected.name}}
+            </ui-select-match>
+            <ui-select-choices repeat="model in obs.models | filter: $select.search">
+                <span ng-bind-html="model.name | highlight: $select.search"></span>
+            </ui-select-choices>
+        </ui-select>
+
+        <button ng-disabled="!obs.selectedModel" ng-click="obs.viewSummary(obs.selectedModel.ucc)" class="btn btn-primary">Show Model Summary</button>
+        </form>
+    </div>
+</div>
