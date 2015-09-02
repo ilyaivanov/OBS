@@ -425,7 +425,7 @@ function models() {
 
     this.getModel = function (ucc) {
         var found = models.filter(function (m) {
-            return m.ucc = ucc;
+            return m.ucc == ucc;
         });
         if (found.length < 0)
             throw new Error("now model found for ucc: " + ucc);
