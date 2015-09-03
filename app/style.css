@@ -1,4 +1,9 @@
 .summary-section {
     margin-left: 25px;
     margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+.list-group-condensed .list-group-item {
+    padding: 6px;
 }
