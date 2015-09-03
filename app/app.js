@@ -1,1 +1,1 @@
-angular.module("app", ["ui.router", "ui.select"]);
+angular.module("app", ["ui.router", "ui.select", "platanus.skip-filter"]);
