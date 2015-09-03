@@ -1,423 +1,2092 @@
 function models() {
     var models = [
-        {name: "Chrysler PT Criuser", segment:"Near Luxury Car", ucc: "002"},
-        {name: "Chrysler 200", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Chrysler 300", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Chrysler 300C", segment:"Near Luxury Car", ucc: "017"},
-        {name: "Chrysler Sebring", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Chrysler Town & Country", segment:"Near Luxury Car", ucc: "506"},
-        {name: "Dodge Dart", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Dodge Caliber", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Dodge Challenger", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Dodge Avenger", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Dodge Charger", segment:"Near Luxury Car", ucc: "046"},
-        {name: "Dodge Viper", segment:"Near Luxury Car", ucc: "056"},
-        {name: "Dodge Nitro", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Dodge Journey", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Dodge Durango", segment:"Near Luxury Car", ucc: "226"},
-        {name: "Dodge Grand Caravan", segment:"Near Luxury Car", ucc: "506"},
-        {name: "Ram Dakota", segment:"Near Luxury Car", ucc: "406"},
-        {name: "Ram 1500", segment:"Near Luxury Car", ucc: "411"},
-        {name: "Ram 2500/3500", segment:"Near Luxury Car", ucc: "416"},
-        {name: "Ram 3500 Cab Chassis", segment:"Near Luxury Car", ucc: "417"},
-        {name: "Ram 4500 Cab Chassis", segment:"Near Luxury Car", ucc: "418"},
-        {name: "Ram 5500 Cab Chassis", segment:"Near Luxury Car", ucc: "419"},
-        {name: "Ram Medium/Heavy Duty Cab Chassis", segment:"Near Luxury Car", ucc: "421"},
-        {name: "Ram Promaster 1500", segment:"Near Luxury Car", ucc: "506"},
-        {name: "Ram Promaster 2500", segment:"Near Luxury Car", ucc: "516"},
-        {name: "Ram Promaster 3500", segment:"Near Luxury Car", ucc: "526"},
-        {name: "Ram Promaster Window Van", segment:"Near Luxury Car", ucc: "536"},
-        {name: "Ram Cargo Van", segment:"Near Luxury Car", ucc: "550"},
-        {name: "Jeep Wrangler 2D", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Jeep Wrangler Unlimited 4D", segment:"Near Luxury Car", ucc: "211"},
-        {name: "Jeep Compass", segment:"Near Luxury Car", ucc: "221"},
-        {name: "Jeep Patriot", segment:"Near Luxury Car", ucc: "231"},
-        {name: "Jeep Liberty", segment:"Near Luxury Car", ucc: "241"},
-        {name: "Jeep Cherokee", segment:"Near Luxury Car", ucc: "251"},
-        {name: "Jeep Grand Cherokee", segment:"Near Luxury Car", ucc: "261"},
-        {name: "Fiat 500", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Fiat 500L", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Ford C-Max Energi", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Ford C-Max Hybrid", segment:"Near Luxury Car", ucc: "007"},
-        {name: "Ford Fiesta", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Ford Focus", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Ford Focus Electric", segment:"Near Luxury Car", ucc: "027"},
-        {name: "Ford Mustang", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Ford Shelby GT500", segment:"Near Luxury Car", ucc: "041"},
-        {name: "Ford Fusion", segment:"Near Luxury Car", ucc: "046"},
-        {name: "Ford Fusion Hybrid", segment:"Near Luxury Car", ucc: "047"},
-        {name: "Ford Fusion Energi Plug-In Hybrid", segment:"Near Luxury Car", ucc: "048"},
-        {name: "Ford Taurus", segment:"Near Luxury Car", ucc: "056"},
-        {name: "Ford Escape", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Ford Escape Hybrid", segment:"Near Luxury Car", ucc: "207"},
-        {name: "Ford Edge", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Ford Explorer", segment:"Near Luxury Car", ucc: "226"},
-        {name: "Ford Flex", segment:"Near Luxury Car", ucc: "236"},
-        {name: "Ford Expedition", segment:"Near Luxury Car", ucc: "246"},
-        {name: "Ford Expedition EL", segment:"Near Luxury Car", ucc: "256"},
-        {name: "Ford Ranger", segment:"Near Luxury Car", ucc: "406"},
-        {name: "Ford F-150", segment:"Near Luxury Car", ucc: "416"},
-        {name: "Ford F-250/350 SD", segment:"Near Luxury Car", ucc: "426"},
-        {name: "Ford Transit Connect Passenger Wagon", segment:"Near Luxury Car", ucc: "506"},
-        {name: "Ford Transit Connect Cargo Van", segment:"Near Luxury Car", ucc: "507"},
-        {name: "Ford E-Series Passenger Wagon", segment:"Near Luxury Car", ucc: "516"},
-        {name: "Ford E-Series Cargo Van", segment:"Near Luxury Car", ucc: "517"},
-        {name: "Ford Transit-150", segment:"Near Luxury Car", ucc: "520"},
-        {name: "Ford Transit-250", segment:"Near Luxury Car", ucc: "521"},
-        {name: "Ford Transit-350", segment:"Near Luxury Car", ucc: "522"},
-        {name: "Lincoln MKS", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Lincoln MKZ", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Lincoln MKZ Hybrid", segment:"Near Luxury Car", ucc: "017"},
-        {name: "Lincoln MKX", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Lincoln MKC", segment:"Near Luxury Car", ucc: "207"},
-        {name: "Lincoln MKT", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Lincoln Navigator", segment:"Near Luxury Car", ucc: "226"},
-        {name: "Lincoln Navigator L", segment:"Near Luxury Car", ucc: "236"},
-        {name: "Chevrolet Spark", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Chevrolet Spark EV", segment:"Near Luxury Car", ucc: "007"},
-        {name: "Chevrolet Sonic", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Chevrolet Cruze", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Chevrolet Volt", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Chevrolet Camaro", segment:"Near Luxury Car", ucc: "046"},
-        {name: "Chevrolet Corvette", segment:"Near Luxury Car", ucc: "056"},
-        {name: "Chevrolet Malibu", segment:"Near Luxury Car", ucc: "066"},
-        {name: "Chevrolet Impala", segment:"Near Luxury Car", ucc: "076"},
-        {name: "Chevrolet SS", segment:"Near Luxury Car", ucc: "077"},
-        {name: "Chevrolet HHR", segment:"Near Luxury Car", ucc: "085"},
-        {name: "Chevrolet Aveo", segment:"Near Luxury Car", ucc: "086"},
-        {name: "Chevrolet Trax", segment:"Near Luxury Car", ucc: "203"},
-        {name: "Chevrolet Equinox", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Chevrolet Traverse", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Chevrolet Tahoe", segment:"Near Luxury Car", ucc: "226"},
-        {name: "Chevrolet Tahoe Hybrid", segment:"Near Luxury Car", ucc: "227"},
-        {name: "Chevrolet Suburban", segment:"Near Luxury Car", ucc: "236"},
-        {name: "Chevrolet Avalanche", segment:"Near Luxury Car", ucc: "246"},
-        {name: "Chevrolet Colorado", segment:"Near Luxury Car", ucc: "406"},
-        {name: "Chevrolet Silverado 1500", segment:"Near Luxury Car", ucc: "416"},
-        {name: "Chevrolet Silverado 1500 Hybrid", segment:"Near Luxury Car", ucc: "417"},
-        {name: "Chevrolet Silverado 2500HD/3500", segment:"Near Luxury Car", ucc: "426"},
-        {name: "Chevrolet Express Passenger Wagon", segment:"Near Luxury Car", ucc: "506"},
-        {name: "Chevrolet Express Cargo Van", segment:"Near Luxury Car", ucc: "507"},
-        {name: "Buick Lucerne", segment:"Near Luxury Car", ucc: "005"},
-        {name: "Buick Regal", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Buick Verano", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Buick Lacrosse", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Buick Encore", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Buick Enclave", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Cadillac ATS", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Cadillac CTS", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Cadillac CTS-V", segment:"Near Luxury Car", ucc: "017"},
-        {name: "Cadillac ELR", segment:"Near Luxury Car", ucc: "020"},
-        {name: "Cadillac XTS", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Cadillac DTS", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Cadillac STS", segment:"Near Luxury Car", ucc: "046"},
-        {name: "Cadillac SRX", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Cadillac Escalade", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Cadillac Escalade Hybrid", segment:"Near Luxury Car", ucc: "217"},
-        {name: "Cadillac Escalade ESV", segment:"Near Luxury Car", ucc: "221"},
-        {name: "Cadillac Escalade EXT", segment:"Near Luxury Car", ucc: "226"},
-        {name: "GMC Terrain", segment:"Near Luxury Car", ucc: "206"},
-        {name: "GMC Terrain Denali", segment:"Near Luxury Car", ucc: "207"},
-        {name: "GMC Acadia", segment:"Near Luxury Car", ucc: "216"},
-        {name: "GMC Yukon", segment:"Near Luxury Car", ucc: "226"},
-        {name: "GMC Yukon Denali", segment:"Near Luxury Car", ucc: "227"},
-        {name: "GMC Yukon XL", segment:"Near Luxury Car", ucc: "236"},
-        {name: "GMC Yukon XL Denali", segment:"Near Luxury Car", ucc: "237"},
-        {name: "GMC Canyon", segment:"Near Luxury Car", ucc: "406"},
-        {name: "GMC Sierra 1500", segment:"Near Luxury Car", ucc: "416"},
-        {name: "GMC Sierra 2500 HD/3500", segment:"Near Luxury Car", ucc: "426"},
-        {name: "GMC Savana Passenger Wagon", segment:"Near Luxury Car", ucc: "506"},
-        {name: "GMC Savana Cargo Van", segment:"Near Luxury Car", ucc: "507"},
-        {name: "Tesla Model S", segment:"Near Luxury Car", ucc: "006"},
-        {name: "MINI Cooper Hardtop", segment:"Near Luxury Car", ucc: "006"},
-        {name: "MINI Cooper Coupe", segment:"Near Luxury Car", ucc: "016"},
-        {name: "MINI Cooper Convertible", segment:"Near Luxury Car", ucc: "026"},
-        {name: "MINI Cooper Roadster", segment:"Near Luxury Car", ucc: "036"},
-        {name: "MINI Cooper Clubman", segment:"Near Luxury Car", ucc: "046"},
-        {name: "MINI Cooper Countryman", segment:"Near Luxury Car", ucc: "056"},
-        {name: "MINI Cooper Paceman", segment:"Near Luxury Car", ucc: "066"},
-        {name: "BMW ActiveE", segment:"Near Luxury Car", ucc: "003"},
-        {name: "BMW Z4", segment:"Near Luxury Car", ucc: "006"},
-        {name: "BMW 1 Series", segment:"Near Luxury Car", ucc: "016"},
-        {name: "BMW i3", segment:"Near Luxury Car", ucc: "026"},
-        {name: "BMW 3 Series", segment:"Near Luxury Car", ucc: "036"},
-        {name: "BMW Activehybrid 3", segment:"Near Luxury Car", ucc: "037"},
-        {name: "BMW 2 Series", segment:"Near Luxury Car", ucc: "040"},
-        {name: "BMW 4 Series", segment:"Near Luxury Car", ucc: "046"},
-        {name: "BMW 5 Series", segment:"Near Luxury Car", ucc: "056"},
-        {name: "BMW Activehybrid 5", segment:"Near Luxury Car", ucc: "057"},
-        {name: "BMW 6 Series", segment:"Near Luxury Car", ucc: "066"},
-        {name: "BMW 7 Series", segment:"Near Luxury Car", ucc: "076"},
-        {name: "BMW 7 Series Activehybrid", segment:"Near Luxury Car", ucc: "077"},
-        {name: "BMW Alpina B7", segment:"Near Luxury Car", ucc: "086"},
-        {name: "BMW i8", segment:"Near Luxury Car", ucc: "090"},
-        {name: "BMW X1", segment:"Near Luxury Car", ucc: "211"},
-        {name: "BMW X3", segment:"Near Luxury Car", ucc: "231"},
-        {name: "BMW X4", segment:"Near Luxury Car", ucc: "241"},
-        {name: "BMW X5", segment:"Near Luxury Car", ucc: "251"},
-        {name: "BMW X6", segment:"Near Luxury Car", ucc: "261"},
-        {name: "BMW X6 ActiveHybrid", segment:"Near Luxury Car", ucc: "262"},
-        {name: "Mercedes CLA-Class", segment:"Near Luxury Car", ucc: "001"},
-        {name: "Mercedes B-Class", segment:"Near Luxury Car", ucc: "002"},
-        {name: "Mercedes C-Class", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Mercedes CL-Class", segment:"Near Luxury Car", ucc: "011"},
-        {name: "Mercedes CLS-Class", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Mercedes E-Class", segment:"Near Luxury Car", ucc: "021"},
-        {name: "Mercedes E-Class Hybrid", segment:"Near Luxury Car", ucc: "022"},
-        {name: "Mercedes S-Class", segment:"Near Luxury Car", ucc: "031"},
-        {name: "Mercedes S-Class Hybrid", segment:"Near Luxury Car", ucc: "032"},
-        {name: "Mercedes SLK-Class", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Mercedes SL-Class", segment:"Near Luxury Car", ucc: "041"},
-        {name: "Mercedes SLS AMG", segment:"Near Luxury Car", ucc: "046"},
-        {name: "Mercedes GLK-Class", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Mercedes R-Class", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Mercedes ML-Class", segment:"Near Luxury Car", ucc: "226"},
-        {name: "Mercedes ML-Class Hybrid", segment:"Near Luxury Car", ucc: "227"},
-        {name: "Mercedes GLA-Class", segment:"Near Luxury Car", ucc: "228"},
-        {name: "Mercedes GL-Class", segment:"Near Luxury Car", ucc: "236"},
-        {name: "Mercedes G-Class", segment:"Near Luxury Car", ucc: "246"},
-        {name: "Smart fortwo", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Jaguar F-Type", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Jaguar XK", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Jaguar XF", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Jaguar XJ", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Jaguar XJL", segment:"Near Luxury Car", ucc: "046"},
-        {name: "Land Rover LR2", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Land Rover LR4", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Land Rover Range Rover Evoque", segment:"Near Luxury Car", ucc: "226"},
-        {name: "Land Rover Range Rover Sport", segment:"Near Luxury Car", ucc: "236"},
-        {name: "Land Rover Range Rover", segment:"Near Luxury Car", ucc: "246"},
-        {name: "Porsche Boxster", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Porsche 911", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Porsche Cayman", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Porsche Panamera", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Porsche Panamera Hybrid", segment:"Near Luxury Car", ucc: "037"},
-        {name: "Porsche Cayenne", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Porsche Cayenne Hybrid", segment:"Near Luxury Car", ucc: "217"},
-        {name: "Porsche Macan", segment:"Near Luxury Car", ucc: "230"},
-        {name: "Volkswagen Beetle", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Volkswagen Eos", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Volkswagen Golf", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Volkswagen GTI", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Volkswagen Jetta", segment:"Near Luxury Car", ucc: "046"},
-        {name: "Volkswagen Jetta Hybrid", segment:"Near Luxury Car", ucc: "047"},
-        {name: "Volkswagen CC", segment:"Near Luxury Car", ucc: "056"},
-        {name: "Volkswagen Passat", segment:"Near Luxury Car", ucc: "066"},
-        {name: "Volkswagen Tiguan", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Volkswagen Touareg", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Volkswagen Touareg Hybrid", segment:"Near Luxury Car", ucc: "217"},
-        {name: "Volkswagen Routan", segment:"Near Luxury Car", ucc: "506"},
-        {name: "Audi TT", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Audi R8", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Audi A3", segment:"Near Luxury Car", ucc: "035"},
-        {name: "Audi S3", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Audi A4", segment:"Near Luxury Car", ucc: "045"},
-        {name: "Audi S4", segment:"Near Luxury Car", ucc: "046"},
-        {name: "Audi Allroad", segment:"Near Luxury Car", ucc: "049"},
-        {name: "Audi A5", segment:"Near Luxury Car", ucc: "055"},
-        {name: "Audi S5", segment:"Near Luxury Car", ucc: "056"},
-        {name: "Audi RS 5", segment:"Near Luxury Car", ucc: "059"},
-        {name: "Audi A6", segment:"Near Luxury Car", ucc: "065"},
-        {name: "Audi S6", segment:"Near Luxury Car", ucc: "066"},
-        {name: "Audi A7", segment:"Near Luxury Car", ucc: "075"},
-        {name: "Audi S7", segment:"Near Luxury Car", ucc: "076"},
-        {name: "Audi RS 7", segment:"Near Luxury Car", ucc: "077"},
-        {name: "Audi A8", segment:"Near Luxury Car", ucc: "085"},
-        {name: "Audi A8L", segment:"Near Luxury Car", ucc: "086"},
-        {name: "Audi S8", segment:"Near Luxury Car", ucc: "087"},
-        {name: "Audi Q3", segment:"Near Luxury Car", ucc: "201"},
-        {name: "Audi Q5", segment:"Near Luxury Car", ucc: "205"},
-        {name: "Audi Q5 Hybrid", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Audi Q7", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Volvo C30", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Volvo S40", segment:"Near Luxury Car", ucc: "046"},
-        {name: "Volvo V50", segment:"Near Luxury Car", ucc: "056"},
-        {name: "Volvo S60", segment:"Near Luxury Car", ucc: "066"},
-        {name: "Volvo V60", segment:"Near Luxury Car", ucc: "067"},
-        {name: "Volvo C70", segment:"Near Luxury Car", ucc: "076"},
-        {name: "Volvo V70", segment:"Near Luxury Car", ucc: "080"},
-        {name: "Volvo S80", segment:"Near Luxury Car", ucc: "086"},
-        {name: "Volvo XC60", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Volvo XC70", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Volvo XC90", segment:"Near Luxury Car", ucc: "226"},
-        {name: "Honda Fit", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Honda Fit EV", segment:"Near Luxury Car", ucc: "007"},
-        {name: "Honda Insight Hybrid", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Honda Civic", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Honda Civic Hybrid", segment:"Near Luxury Car", ucc: "027"},
-        {name: "Honda CR-Z", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Honda Accord", segment:"Near Luxury Car", ucc: "046"},
-        {name: "Honda Accord Crosstour", segment:"Near Luxury Car", ucc: "051"},
-        {name: "Honda Element", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Honda CR-V", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Honda Pilot", segment:"Near Luxury Car", ucc: "226"},
-        {name: "Honda Ridgeline", segment:"Near Luxury Car", ucc: "406"},
-        {name: "Honda Odyssey", segment:"Near Luxury Car", ucc: "506"},
-        {name: "Acura ILX", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Acura ILX Hybrid", segment:"Near Luxury Car", ucc: "007"},
-        {name: "Acura TSX", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Acura TL", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Acura TLX", segment:"Near Luxury Car", ucc: "027"},
-        {name: "Acura RL", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Acura RLX", segment:"Near Luxury Car", ucc: "037"},
-        {name: "Acura ZDX", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Acura RDX", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Acura MDX", segment:"Near Luxury Car", ucc: "226"},
-        {name: "Suzuki SX4", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Suzuki Kizashi", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Suzuki Grand Vitara", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Suzuki Equator", segment:"Near Luxury Car", ucc: "406"},
-        {name: "Hyundai Accent", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Hyundai Elantra", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Hyundai Veloster", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Hyundai Sonata", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Hyundai Sonata Hybrid", segment:"Near Luxury Car", ucc: "037"},
-        {name: "Hyundai Azera", segment:"Near Luxury Car", ucc: "041"},
-        {name: "Hyundai Equus", segment:"Near Luxury Car", ucc: "046"},
-        {name: "Hyundai Genesis", segment:"Near Luxury Car", ucc: "056"},
-        {name: "Hyundai Tucson", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Hyundai Santa Fe Sport", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Hyundai Santa Fe", segment:"Near Luxury Car", ucc: "226"},
-        {name: "Hyundai Veracruz", segment:"Near Luxury Car", ucc: "236"},
-        {name: "Kia Rio", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Kia Rio 5", segment:"Near Luxury Car", ucc: "011"},
-        {name: "Kia Forte", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Kia Soul", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Kia Optima", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Kia Optima (Hybrid)", segment:"Near Luxury Car", ucc: "037"},
-        {name: "Kia Cadenza", segment:"Near Luxury Car", ucc: "046"},
-        {name: "Kia K900", segment:"Near Luxury Car", ucc: "047"},
-        {name: "Kia Spectra", segment:"Near Luxury Car", ucc: "056"},
-        {name: "Kia Sportage", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Kia Sorento", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Kia Sedona", segment:"Near Luxury Car", ucc: "506"},
-        {name: "Mazda Mazda2", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Mazda Mazda3", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Mazda Mazda5", segment:"Near Luxury Car", ucc: "021"},
-        {name: "Mazda Miata MX-5", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Mazda Mazda6", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Mazda CX-5", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Mazda CX-7", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Mazda CX-9", segment:"Near Luxury Car", ucc: "226"},
-        {name: "Mitsubishi I-MiEV", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Mitsubishi Mirage", segment:"Near Luxury Car", ucc: "007"},
-        {name: "Mitsubishi Lancer", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Mitsubishi Eclipse", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Mitsubishi Galant", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Mitsubishi Outlander Sport", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Mitsubishi Outlander", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Nissan Versa", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Nissan Note/Versa Note", segment:"Near Luxury Car", ucc: "011"},
-        {name: "Nissan Sentra", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Nissan Juke", segment:"Near Luxury Car", ucc: "023"},
-        {name: "Nissan Leaf", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Nissan Cube", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Nissan Z", segment:"Near Luxury Car", ucc: "046"},
-        {name: "Nissan GT-R", segment:"Near Luxury Car", ucc: "051"},
-        {name: "Nissan Altima", segment:"Near Luxury Car", ucc: "056"},
-        {name: "Nissan Altima Hybrid", segment:"Near Luxury Car", ucc: "057"},
-        {name: "Nissan Maxima", segment:"Near Luxury Car", ucc: "066"},
-        {name: "Nissan Rogue", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Nissan Rogue Select", segment:"Near Luxury Car", ucc: "217"},
-        {name: "Nissan Xterra", segment:"Near Luxury Car", ucc: "226"},
-        {name: "Nissan Murano", segment:"Near Luxury Car", ucc: "236"},
-        {name: "Nissan Murano Cross Cabriolet", segment:"Near Luxury Car", ucc: "237"},
-        {name: "Nissan Pathfinder", segment:"Near Luxury Car", ucc: "246"},
-        {name: "Nissan Armada", segment:"Near Luxury Car", ucc: "256"},
-        {name: "Nissan Frontier", segment:"Near Luxury Car", ucc: "406"},
-        {name: "Nissan Titan", segment:"Near Luxury Car", ucc: "416"},
-        {name: "Nissan Quest", segment:"Near Luxury Car", ucc: "506"},
-        {name: "Nissan NVP Passenger", segment:"Near Luxury Car", ucc: "516"},
-        {name: "Nissan NV 200", segment:"Near Luxury Car", ucc: "526"},
-        {name: "Nissan NV Cargo", segment:"Near Luxury Car", ucc: "536"},
-        {name: "Infiniti G", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Infiniti M", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Infiniti M Hybrid", segment:"Near Luxury Car", ucc: "017"},
-        {name: "Infiniti Q", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Infiniti EX", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Infiniti FX", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Infiniti JX", segment:"Near Luxury Car", ucc: "226"},
-        {name: "Infiniti QX", segment:"Near Luxury Car", ucc: "236"},
-        {name: "Subaru Impreza", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Subaru Impreza Outback Sport", segment:"Near Luxury Car", ucc: "011"},
-        {name: "Subaru Impreza WRX", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Subaru WRX", segment:"Near Luxury Car", ucc: "017"},
-        {name: "Subaru WRX STI", segment:"Near Luxury Car", ucc: "018"},
-        {name: "Subaru BRZ", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Subaru Legacy", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Subaru Forester", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Subaru XV Crosstrek", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Subaru Outback", segment:"Near Luxury Car", ucc: "226"},
-        {name: "Subaru Tribeca", segment:"Near Luxury Car", ucc: "236"},
-        {name: "Scion iQ", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Scion tC", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Scion FR-S", segment:"Near Luxury Car", ucc: "021"},
-        {name: "Scion xB", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Scion xD", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Toyota Yaris", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Toyota Prius", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Toyota Prius c", segment:"Near Luxury Car", ucc: "017"},
-        {name: "Toyota Prius Plug-in", segment:"Near Luxury Car", ucc: "018"},
-        {name: "Toyota Prius v", segment:"Near Luxury Car", ucc: "019"},
-        {name: "Toyota Corolla", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Toyota Matrix", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Toyota Camry", segment:"Near Luxury Car", ucc: "046"},
-        {name: "Toyota Camry Hybrid", segment:"Near Luxury Car", ucc: "047"},
-        {name: "Toyota Avalon", segment:"Near Luxury Car", ucc: "056"},
-        {name: "Toyota Avalon Hybrid", segment:"Near Luxury Car", ucc: "057"},
-        {name: "Toyota FJ Cruiser", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Toyota RAV4", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Toyota RAV4 EV", segment:"Near Luxury Car", ucc: "217"},
-        {name: "Toyota Venza", segment:"Near Luxury Car", ucc: "226"},
-        {name: "Toyota Highlander", segment:"Near Luxury Car", ucc: "236"},
-        {name: "Toyota Highlander Hybrid", segment:"Near Luxury Car", ucc: "237"},
-        {name: "Toyota 4Runner", segment:"Near Luxury Car", ucc: "246"},
-        {name: "Toyota Sequoia", segment:"Near Luxury Car", ucc: "256"},
-        {name: "Toyota Land Cruiser", segment:"Near Luxury Car", ucc: "266"},
-        {name: "Toyota Tacoma", segment:"Near Luxury Car", ucc: "406"},
-        {name: "Toyota Tundra", segment:"Near Luxury Car", ucc: "416"},
-        {name: "Toyota Sienna", segment:"Near Luxury Car", ucc: "506"},
-        {name: "Lexus CT 200h", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Lexus IS", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Lexus HS Hybrid", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Lexus ES", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Lexus ES Hybrid", segment:"Near Luxury Car", ucc: "037"},
-        {name: "Lexus GS", segment:"Near Luxury Car", ucc: "046"},
-        {name: "Lexus GS Hybrid", segment:"Near Luxury Car", ucc: "047"},
-        {name: "Lexus LS", segment:"Near Luxury Car", ucc: "056"},
-        {name: "Lexus LS Hybrid", segment:"Near Luxury Car", ucc: "057"},
-        {name: "Lexus RC", segment:"Near Luxury Car", ucc: "066"},
-        {name: "Lexus RX", segment:"Near Luxury Car", ucc: "206"},
-        {name: "Lexus RX Hybrid", segment:"Near Luxury Car", ucc: "207"},
-        {name: "Lexus GX", segment:"Near Luxury Car", ucc: "216"},
-        {name: "Lexus LX", segment:"Near Luxury Car", ucc: "226"},
-        {name: "Lexus NX", segment:"Near Luxury Car", ucc: "236"},
-        {name: "Aston Martin DB9", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Aston Martin Rapide", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Aston Martin Vanquish", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Aston Martin Vantage", segment:"Near Luxury Car", ucc: "036"},
-        {name: "McLaren MP4-12C", segment:"Near Luxury Car", ucc: "006"},
-        {name: "McLaren 650S", segment:"Near Luxury Car", ucc: "007"},
-        {name: "Bentley Flying Spur", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Bentley Continental", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Bentley Musanne", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Lamborghini Aventador", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Lamborghini Gallardo", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Lamborghini Huracan", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Lotus Evora", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Maserati Quattroporte", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Maserati Ghible", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Maserati Granturismo", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Rolls-Royce Ghost", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Rolls-Royce Phanom Drophead", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Rolls-Royce Phanom", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Rolls-Royce Wraith", segment:"Near Luxury Car", ucc: "036"},
-        {name: "Ferrari 458 Italia", segment:"Near Luxury Car", ucc: "006"},
-        {name: "Ferrari 458 Speciale", segment:"Near Luxury Car", ucc: "007"},
-        {name: "Ferrari California", segment:"Near Luxury Car", ucc: "016"},
-        {name: "Ferrari FF", segment:"Near Luxury Car", ucc: "026"},
-        {name: "Ferrari F12 Berlinetta", segment:"Near Luxury Car", ucc: "036"}
-    ]
+        {
+            "name": "Chrysler PT Criuser",
+            "ucc": "01002",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Chrysler 200",
+            "ucc": "01006",
+            "segment": "Convertible"
+        },
+        {
+            "name": "Chrysler 300",
+            "ucc": "01016",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Chrysler 300C",
+            "ucc": "01017",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Chrysler Sebring",
+            "ucc": "01026",
+            "segment": "Convertible"
+        },
+        {
+            "name": "Chrysler Town & Country",
+            "ucc": "01506",
+            "segment": "Minivan"
+        },
+        {
+            "name": "Ford C-Max Energi",
+            "ucc": "11006",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Ford C-Max Hybrid",
+            "ucc": "11007",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Ford Fiesta",
+            "ucc": "11016",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Ford Focus",
+            "ucc": "11026",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Ford Focus Electric",
+            "ucc": "11027",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Ford Mustang",
+            "ucc": "11036",
+            "segment": "Convertible"
+        },
+        {
+            "name": "Ford Shelby GT500",
+            "ucc": "11041",
+            "segment": "Convertible"
+        },
+        {
+            "name": "Ford Fusion",
+            "ucc": "11046",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Ford Fusion Hybrid",
+            "ucc": "11047",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Ford Fusion Energi Plug-In Hybrid",
+            "ucc": "11048",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Ford Taurus",
+            "ucc": "11056",
+            "segment": "Large Car"
+        },
+        {
+            "name": "Ford Escape",
+            "ucc": "11206",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Ford Escape Hybrid",
+            "ucc": "11207",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Ford Edge",
+            "ucc": "11216",
+            "segment": "Mid-Size Crossover Utility"
+        },
+        {
+            "name": "Ford Explorer",
+            "ucc": "11226",
+            "segment": "Mid-Size Traditional Utility"
+        },
+        {
+            "name": "Ford Flex",
+            "ucc": "11236",
+            "segment": "Mid-Size Crossover Utility"
+        },
+        {
+            "name": "Ford Expedition",
+            "ucc": "11246",
+            "segment": "Large Utility"
+        },
+        {
+            "name": "Ford Expedition EL",
+            "ucc": "11256",
+            "segment": "Large Utility"
+        },
+        {
+            "name": "Ford Ranger",
+            "ucc": "11406",
+            "segment": "Standard Pickup"
+        },
+        {
+            "name": "Ford F-150",
+            "ucc": "11416",
+            "segment": "Full-Size Pickup"
+        },
+        {
+            "name": "Ford F-250/350 SD",
+            "ucc": "11426",
+            "segment": "Heavy Duty Pickup"
+        },
+        {
+            "name": "Ford Transit Connect Passenger Wagon",
+            "ucc": "11506",
+            "segment": "Full-Size Cargo Van"
+        },
+        {
+            "name": "Ford Transit Connect Cargo Van",
+            "ucc": "11507",
+            "segment": "Full-Size Cargo Van"
+        },
+        {
+            "name": "Ford E-Series Passenger Wagon",
+            "ucc": "11516",
+            "segment": "Full-Size Passenger Van"
+        },
+        {
+            "name": "Ford E-Series Cargo Van",
+            "ucc": "11517",
+            "segment": "Full-Size Cargo Van"
+        },
+        {
+            "name": "Ford Transit-150",
+            "ucc": "11520",
+            "segment": "Full-Size Cargo Van"
+        },
+        {
+            "name": "Ford Transit-250",
+            "ucc": "11521",
+            "segment": "Full-Size Cargo Van"
+        },
+        {
+            "name": "Ford Transit-350",
+            "ucc": "11522",
+            "segment": "Full-Size Cargo Van"
+        },
+        {
+            "name": "Tesla Model S",
+            "ucc": "31006",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "Chevrolet Spark",
+            "ucc": "22006",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Chevrolet Spark EV",
+            "ucc": "22007",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Chevrolet Sonic",
+            "ucc": "22016",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Chevrolet Cruze",
+            "ucc": "22026",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Chevrolet Volt",
+            "ucc": "22036",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Chevrolet Camaro",
+            "ucc": "22046",
+            "segment": "Convertible"
+        },
+        {
+            "name": "Chevrolet Corvette",
+            "ucc": "22056",
+            "segment": "Convertible"
+        },
+        {
+            "name": "Chevrolet Malibu",
+            "ucc": "22066",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Chevrolet Impala",
+            "ucc": "22076",
+            "segment": "Large Car"
+        },
+        {
+            "name": "Chevrolet SS",
+            "ucc": "22077",
+            "segment": "Large Car"
+        },
+        {
+            "name": "Chevrolet HHR",
+            "ucc": "22085",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Chevrolet Aveo",
+            "ucc": "22086",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Chevrolet Trax",
+            "ucc": "22203",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Chevrolet Equinox",
+            "ucc": "22206",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Chevrolet Traverse",
+            "ucc": "22216",
+            "segment": "Mid-Size Crossover Utility"
+        },
+        {
+            "name": "Chevrolet Tahoe",
+            "ucc": "22226",
+            "segment": "Large Utility"
+        },
+        {
+            "name": "Chevrolet Tahoe Hybrid",
+            "ucc": "22227",
+            "segment": null
+        },
+        {
+            "name": "Chevrolet Suburban",
+            "ucc": "22236",
+            "segment": "Large Utility"
+        },
+        {
+            "name": "Chevrolet Avalanche",
+            "ucc": "22246",
+            "segment": "Full-Size Pickup"
+        },
+        {
+            "name": "Chevrolet Colorado",
+            "ucc": "22406",
+            "segment": "Standard Pickup"
+        },
+        {
+            "name": "Chevrolet Silverado 1500",
+            "ucc": "22416",
+            "segment": "Full-Size Pickup"
+        },
+        {
+            "name": "Chevrolet Silverado 1500 Hybrid",
+            "ucc": "22417",
+            "segment": null
+        },
+        {
+            "name": "Chevrolet Silverado 2500HD/3500",
+            "ucc": "22426",
+            "segment": "Heavy Duty Pickup"
+        },
+        {
+            "name": "Chevrolet Express Passenger Wagon",
+            "ucc": "22506",
+            "segment": "Full-Size Passenger Van"
+        },
+        {
+            "name": "Chevrolet Express Cargo Van",
+            "ucc": "22507",
+            "segment": "Full-Size Cargo Van"
+        },
+        {
+            "name": "Dodge Dart",
+            "ucc": "03006",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Dodge Caliber",
+            "ucc": "03016",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Dodge Challenger",
+            "ucc": "03026",
+            "segment": "Specialty Coupe"
+        },
+        {
+            "name": "Dodge Avenger",
+            "ucc": "03036",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Dodge Charger",
+            "ucc": "03046",
+            "segment": "Large Car"
+        },
+        {
+            "name": "Dodge Viper",
+            "ucc": "03056",
+            "segment": "Premium Coupe"
+        },
+        {
+            "name": "Dodge Nitro",
+            "ucc": "03206",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Dodge Journey",
+            "ucc": "03216",
+            "segment": "Mid-Size Crossover Utility"
+        },
+        {
+            "name": "Dodge Durango",
+            "ucc": "03226",
+            "segment": "Mid-Size Traditional Utility"
+        },
+        {
+            "name": "Dodge Grand Caravan",
+            "ucc": "03506",
+            "segment": "Minivan"
+        },
+        {
+            "name": "Lincoln MKS",
+            "ucc": "13006",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Lincoln MKZ",
+            "ucc": "13016",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Lincoln MKZ Hybrid",
+            "ucc": "13017",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Lincoln MKX",
+            "ucc": "13206",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Lincoln MKC",
+            "ucc": "13207",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Lincoln MKT",
+            "ucc": "13216",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "Lincoln Navigator",
+            "ucc": "13226",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Lincoln Navigator L",
+            "ucc": "13236",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Ram Dakota",
+            "ucc": "05406",
+            "segment": "Standard Pickup"
+        },
+        {
+            "name": "Ram 1500",
+            "ucc": "05411",
+            "segment": "Full-Size Pickup"
+        },
+        {
+            "name": "Ram 2500/3500",
+            "ucc": "05416",
+            "segment": "Heavy Duty Pickup"
+        },
+        {
+            "name": "Ram 3500 Cab Chassis",
+            "ucc": "05417",
+            "segment": "Heavy Duty Pickup"
+        },
+        {
+            "name": "Ram 4500 Cab Chassis",
+            "ucc": "05418",
+            "segment": "Heavy Duty Pickup"
+        },
+        {
+            "name": "Ram 5500 Cab Chassis",
+            "ucc": "05419",
+            "segment": "Heavy Duty Pickup"
+        },
+        {
+            "name": "Ram Medium/Heavy Duty Cab Chassis",
+            "ucc": "05421",
+            "segment": null
+        },
+        {
+            "name": "Ram Promaster 1500",
+            "ucc": "05506",
+            "segment": "Full-Size Cargo Van"
+        },
+        {
+            "name": "Ram Promaster 2500",
+            "ucc": "05516",
+            "segment": "Full-Size Cargo Van"
+        },
+        {
+            "name": "Ram Promaster 3500",
+            "ucc": "05526",
+            "segment": "Full-Size Cargo Van"
+        },
+        {
+            "name": "Ram Promaster Window Van",
+            "ucc": "05536",
+            "segment": "Full-Size Cargo Van"
+        },
+        {
+            "name": "Ram Cargo Van",
+            "ucc": "05550",
+            "segment": "Full-Size Cargo Van"
+        },
+        {
+            "name": "Buick Lucerne",
+            "ucc": "25005",
+            "segment": "Large Car"
+        },
+        {
+            "name": "Buick Regal",
+            "ucc": "25006",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Buick Verano",
+            "ucc": "25016",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Buick Lacrosse",
+            "ucc": "25026",
+            "segment": "Large Car"
+        },
+        {
+            "name": "Buick Encore",
+            "ucc": "25206",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Buick Enclave",
+            "ucc": "25216",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Jeep Wrangler 2D",
+            "ucc": "06206",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Jeep Wrangler Unlimited 4D",
+            "ucc": "06211",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Jeep Compass",
+            "ucc": "06221",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Jeep Patriot",
+            "ucc": "06231",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Jeep Liberty",
+            "ucc": "06241",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Jeep Cherokee",
+            "ucc": "06251",
+            "segment": "Mid-Size Traditional Utility"
+        },
+        {
+            "name": "Jeep Grand Cherokee",
+            "ucc": "06261",
+            "segment": "Mid-Size Traditional Utility"
+        },
+        {
+            "name": "Cadillac ATS",
+            "ucc": "26006",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Cadillac CTS",
+            "ucc": "26016",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "Cadillac CTS-V",
+            "ucc": "26017",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "Cadillac ELR",
+            "ucc": "26020",
+            "segment": "Premium Coupe"
+        },
+        {
+            "name": "Cadillac XTS",
+            "ucc": "26026",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Cadillac DTS",
+            "ucc": "26036",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Cadillac STS",
+            "ucc": "26046",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Cadillac SRX",
+            "ucc": "26206",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Cadillac Escalade",
+            "ucc": "26216",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Cadillac Escalade Hybrid",
+            "ucc": "26217",
+            "segment": null
+        },
+        {
+            "name": "Cadillac Escalade ESV",
+            "ucc": "26221",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Cadillac Escalade EXT",
+            "ucc": "26226",
+            "segment": "Luxury Pickup"
+        },
+        {
+            "name": "Fiat 500",
+            "ucc": "07006",
+            "segment": "Convertible"
+        },
+        {
+            "name": "Fiat 500L",
+            "ucc": "07016",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "GMC Terrain",
+            "ucc": "27206",
+            "segment": "Mid-Size Crossover Utility"
+        },
+        {
+            "name": "GMC Terrain Denali",
+            "ucc": "27207",
+            "segment": "Mid-Size Crossover Utility"
+        },
+        {
+            "name": "GMC Acadia",
+            "ucc": "27216",
+            "segment": "Mid-Size Crossover Utility"
+        },
+        {
+            "name": "GMC Yukon",
+            "ucc": "27226",
+            "segment": "Large Utility"
+        },
+        {
+            "name": "GMC Yukon Denali",
+            "ucc": "27227",
+            "segment": "Large Utility"
+        },
+        {
+            "name": "GMC Yukon XL",
+            "ucc": "27236",
+            "segment": "Large Utility"
+        },
+        {
+            "name": "GMC Yukon XL Denali",
+            "ucc": "27237",
+            "segment": "Large Utility"
+        },
+        {
+            "name": "GMC Canyon",
+            "ucc": "27406",
+            "segment": "Standard Pickup"
+        },
+        {
+            "name": "GMC Sierra 1500",
+            "ucc": "27416",
+            "segment": "Full-Size Pickup"
+        },
+        {
+            "name": "GMC Sierra 2500 HD/3500",
+            "ucc": "27426",
+            "segment": "Heavy Duty Pickup"
+        },
+        {
+            "name": "GMC Savana Passenger Wagon",
+            "ucc": "27506",
+            "segment": "Full-Size Passenger Van"
+        },
+        {
+            "name": "GMC Savana Cargo Van",
+            "ucc": "27507",
+            "segment": "Full-Size Cargo Van"
+        },
+        {
+            "name": "MINI Cooper Hardtop",
+            "ucc": "41006",
+            "segment": "Specialty Coupe"
+        },
+        {
+            "name": "MINI Cooper Coupe",
+            "ucc": "41016",
+            "segment": "Specialty Coupe"
+        },
+        {
+            "name": "MINI Cooper Convertible",
+            "ucc": "41026",
+            "segment": "Convertible"
+        },
+        {
+            "name": "MINI Cooper Roadster",
+            "ucc": "41036",
+            "segment": "Convertible"
+        },
+        {
+            "name": "MINI Cooper Clubman",
+            "ucc": "41046",
+            "segment": "Specialty Coupe"
+        },
+        {
+            "name": "MINI Cooper Countryman",
+            "ucc": "41056",
+            "segment": "Specialty Coupe"
+        },
+        {
+            "name": "MINI Cooper Paceman",
+            "ucc": "41066",
+            "segment": "Specialty Coupe"
+        },
+        {
+            "name": "Honda Fit",
+            "ucc": "71006",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Honda Fit EV",
+            "ucc": "71007",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Honda Insight Hybrid",
+            "ucc": "71016",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Honda Civic",
+            "ucc": "71026",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Honda Civic Hybrid",
+            "ucc": "71027",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Honda CR-Z",
+            "ucc": "71036",
+            "segment": "Specialty Coupe"
+        },
+        {
+            "name": "Honda Accord",
+            "ucc": "71046",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Honda Accord Crosstour",
+            "ucc": "71051",
+            "segment": "Mid-Size Multi-Function"
+        },
+        {
+            "name": "Honda Element",
+            "ucc": "71206",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Honda CR-V",
+            "ucc": "71216",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Honda Pilot",
+            "ucc": "71226",
+            "segment": "Mid-Size Crossover Utility"
+        },
+        {
+            "name": "Honda Ridgeline",
+            "ucc": "71406",
+            "segment": "Standard Pickup"
+        },
+        {
+            "name": "Honda Odyssey",
+            "ucc": "71506",
+            "segment": "Minivan"
+        },
+        {
+            "name": "BMW ActiveE",
+            "ucc": "42003",
+            "segment": "Premium Coupe"
+        },
+        {
+            "name": "BMW Z4",
+            "ucc": "42006",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "BMW 1 Series",
+            "ucc": "42016",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "BMW i3",
+            "ucc": "42026",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "BMW 3 Series",
+            "ucc": "42036",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "BMW Activehybrid 3",
+            "ucc": "42037",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "BMW 2 Series",
+            "ucc": "42040",
+            "segment": "Premium Coupe"
+        },
+        {
+            "name": "BMW 4 Series",
+            "ucc": "42046",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "BMW 5 Series",
+            "ucc": "42056",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "BMW Activehybrid 5",
+            "ucc": "42057",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "BMW 6 Series",
+            "ucc": "42066",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "BMW 7 Series",
+            "ucc": "42076",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "BMW 7 Series Activehybrid",
+            "ucc": "42077",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "BMW Alpina B7",
+            "ucc": "42086",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "BMW i8",
+            "ucc": "42090",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "BMW X1",
+            "ucc": "42211",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "BMW X3",
+            "ucc": "42231",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "BMW X4",
+            "ucc": "42241",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "BMW X5",
+            "ucc": "42251",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "BMW X6",
+            "ucc": "42261",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "BMW X6 ActiveHybrid",
+            "ucc": "42262",
+            "segment": null
+        },
+        {
+            "name": "Acura ILX",
+            "ucc": "72006",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Acura ILX Hybrid",
+            "ucc": "72007",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Acura TSX",
+            "ucc": "72016",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "Acura TL",
+            "ucc": "72026",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Acura TLX",
+            "ucc": "72027",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Acura RL",
+            "ucc": "72036",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Acura RLX",
+            "ucc": "72037",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Acura ZDX",
+            "ucc": "72206",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "Acura RDX",
+            "ucc": "72216",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Acura MDX",
+            "ucc": "72226",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Mercedes CLA-Class",
+            "ucc": "43001",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Mercedes B-Class",
+            "ucc": "43002",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Mercedes C-Class",
+            "ucc": "43006",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Mercedes CL-Class",
+            "ucc": "43011",
+            "segment": "Premium Coupe"
+        },
+        {
+            "name": "Mercedes CLS-Class",
+            "ucc": "43016",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Mercedes E-Class",
+            "ucc": "43021",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Mercedes E-Class Hybrid",
+            "ucc": "43022",
+            "segment": null
+        },
+        {
+            "name": "Mercedes S-Class",
+            "ucc": "43031",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Mercedes S-Class Hybrid",
+            "ucc": "43032",
+            "segment": null
+        },
+        {
+            "name": "Mercedes SLK-Class",
+            "ucc": "43036",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Mercedes SL-Class",
+            "ucc": "43041",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Mercedes SLS AMG",
+            "ucc": "43046",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Mercedes GLK-Class",
+            "ucc": "43206",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Mercedes R-Class",
+            "ucc": "43216",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "Mercedes ML-Class",
+            "ucc": "43226",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Mercedes ML-Class Hybrid",
+            "ucc": "43227",
+            "segment": null
+        },
+        {
+            "name": "Mercedes GLA-Class",
+            "ucc": "43228",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Mercedes GL-Class",
+            "ucc": "43236",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Mercedes G-Class",
+            "ucc": "43246",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Suzuki SX4",
+            "ucc": "73006",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Suzuki Kizashi",
+            "ucc": "73016",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Suzuki Grand Vitara",
+            "ucc": "73206",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Suzuki Equator",
+            "ucc": "73406",
+            "segment": "Standard Pickup"
+        },
+        {
+            "name": "Smart fortwo",
+            "ucc": "44006",
+            "segment": "Convertible"
+        },
+        {
+            "name": "Hyundai Accent",
+            "ucc": "74006",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Hyundai Elantra",
+            "ucc": "74016",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Hyundai Veloster",
+            "ucc": "74026",
+            "segment": "Specialty Coupe"
+        },
+        {
+            "name": "Hyundai Sonata",
+            "ucc": "74036",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Hyundai Sonata Hybrid",
+            "ucc": "74037",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Hyundai Azera",
+            "ucc": "74041",
+            "segment": "Large Car"
+        },
+        {
+            "name": "Hyundai Equus",
+            "ucc": "74046",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Hyundai Genesis",
+            "ucc": "74056",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Hyundai Tucson",
+            "ucc": "74206",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Hyundai Santa Fe Sport",
+            "ucc": "74216",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Hyundai Santa Fe",
+            "ucc": "74226",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Hyundai Veracruz",
+            "ucc": "74236",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Jaguar F-Type",
+            "ucc": "45006",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Jaguar XK",
+            "ucc": "45016",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Jaguar XF",
+            "ucc": "45026",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Jaguar XJ",
+            "ucc": "45036",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Jaguar XJL",
+            "ucc": "45046",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Kia Rio",
+            "ucc": "75006",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Kia Rio 5",
+            "ucc": "75011",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Kia Forte",
+            "ucc": "75016",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Kia Soul",
+            "ucc": "75026",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Kia Optima",
+            "ucc": "75036",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Kia Optima (Hybrid)",
+            "ucc": "75037",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Kia Cadenza",
+            "ucc": "75046",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Kia K900",
+            "ucc": "75047",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Kia Spectra",
+            "ucc": "75056",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Kia Sportage",
+            "ucc": "75206",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Kia Sorento",
+            "ucc": "75216",
+            "segment": "Mid-Size Traditional Utility"
+        },
+        {
+            "name": "Kia Sedona",
+            "ucc": "75506",
+            "segment": "Minivan"
+        },
+        {
+            "name": "Land Rover LR2",
+            "ucc": "46206",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Land Rover LR4",
+            "ucc": "46216",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Land Rover Range Rover Evoque",
+            "ucc": "46226",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Land Rover Range Rover Sport",
+            "ucc": "46236",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Land Rover Range Rover",
+            "ucc": "46246",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Mazda Mazda2",
+            "ucc": "76006",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Mazda Mazda3",
+            "ucc": "76016",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Mazda Mazda5",
+            "ucc": "76021",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Mazda Miata MX-5",
+            "ucc": "76026",
+            "segment": "Convertible"
+        },
+        {
+            "name": "Mazda Mazda6",
+            "ucc": "76036",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Mazda CX-5",
+            "ucc": "76206",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Mazda CX-7",
+            "ucc": "76216",
+            "segment": "Mid-Size Crossover Utility"
+        },
+        {
+            "name": "Mazda CX-9",
+            "ucc": "76226",
+            "segment": "Mid-Size Crossover Utility"
+        },
+        {
+            "name": "Porsche Boxster",
+            "ucc": "47006",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Porsche 911",
+            "ucc": "47016",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Porsche Cayman",
+            "ucc": "47026",
+            "segment": "Premium Coupe"
+        },
+        {
+            "name": "Porsche Panamera",
+            "ucc": "47036",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "Porsche Panamera Hybrid",
+            "ucc": "47037",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "Porsche Cayenne",
+            "ucc": "47216",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Porsche Cayenne Hybrid",
+            "ucc": "47217",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Porsche Macan",
+            "ucc": "47230",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Mitsubishi I-MiEV",
+            "ucc": "77006",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Mitsubishi Mirage",
+            "ucc": "77007",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Mitsubishi Lancer",
+            "ucc": "77016",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Mitsubishi Eclipse",
+            "ucc": "77026",
+            "segment": "Convertible"
+        },
+        {
+            "name": "Mitsubishi Galant",
+            "ucc": "77036",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Mitsubishi Outlander Sport",
+            "ucc": "77206",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Mitsubishi Outlander",
+            "ucc": "77216",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Volkswagen Beetle",
+            "ucc": "48006",
+            "segment": "Convertible"
+        },
+        {
+            "name": "Volkswagen Eos",
+            "ucc": "48016",
+            "segment": "Convertible"
+        },
+        {
+            "name": "Volkswagen Golf",
+            "ucc": "48026",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Volkswagen GTI",
+            "ucc": "48036",
+            "segment": "Specialty Coupe"
+        },
+        {
+            "name": "Volkswagen Jetta",
+            "ucc": "48046",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Volkswagen Jetta Hybrid",
+            "ucc": "48047",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Volkswagen CC",
+            "ucc": "48056",
+            "segment": "Large Car"
+        },
+        {
+            "name": "Volkswagen Passat",
+            "ucc": "48066",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Volkswagen Tiguan",
+            "ucc": "48206",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Volkswagen Touareg",
+            "ucc": "48216",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Volkswagen Touareg Hybrid",
+            "ucc": "48217",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Volkswagen Routan",
+            "ucc": "48506",
+            "segment": "Minivan"
+        },
+        {
+            "name": "Nissan Versa",
+            "ucc": "78006",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Nissan Note/Versa Note",
+            "ucc": "78011",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Nissan Sentra",
+            "ucc": "78016",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Nissan Juke",
+            "ucc": "78023",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Nissan Leaf",
+            "ucc": "78026",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Nissan Cube",
+            "ucc": "78036",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Nissan Z",
+            "ucc": "78046",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Nissan GT-R",
+            "ucc": "78051",
+            "segment": "Premium Coupe"
+        },
+        {
+            "name": "Nissan Altima",
+            "ucc": "78056",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Nissan Altima Hybrid",
+            "ucc": "78057",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Nissan Maxima",
+            "ucc": "78066",
+            "segment": "Large Car"
+        },
+        {
+            "name": "Nissan Rogue",
+            "ucc": "78216",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Nissan Rogue Select",
+            "ucc": "78217",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Nissan Xterra",
+            "ucc": "78226",
+            "segment": "Mid-Size Traditional Utility"
+        },
+        {
+            "name": "Nissan Murano",
+            "ucc": "78236",
+            "segment": "Mid-Size Crossover Utility"
+        },
+        {
+            "name": "Nissan Murano Cross Cabriolet",
+            "ucc": "78237",
+            "segment": "Mid-Size Crossover Utility"
+        },
+        {
+            "name": "Nissan Pathfinder",
+            "ucc": "78246",
+            "segment": "Mid-Size Traditional Utility"
+        },
+        {
+            "name": "Nissan Armada",
+            "ucc": "78256",
+            "segment": "Large Utility"
+        },
+        {
+            "name": "Nissan Frontier",
+            "ucc": "78406",
+            "segment": "Standard Pickup"
+        },
+        {
+            "name": "Nissan Titan",
+            "ucc": "78416",
+            "segment": "Full-Size Pickup"
+        },
+        {
+            "name": "Nissan Quest",
+            "ucc": "78506",
+            "segment": "Minivan"
+        },
+        {
+            "name": "Nissan NVP Passenger",
+            "ucc": "78516",
+            "segment": "Full-Size Passenger Van"
+        },
+        {
+            "name": "Nissan NV 200",
+            "ucc": "78526",
+            "segment": "Full-Size Cargo Van"
+        },
+        {
+            "name": "Nissan NV Cargo",
+            "ucc": "78536",
+            "segment": "Full-Size Cargo Van"
+        },
+        {
+            "name": "Audi TT",
+            "ucc": "49006",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Audi R8",
+            "ucc": "49016",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Audi A3",
+            "ucc": "49035",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "Audi S3",
+            "ucc": "49036",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Audi A4",
+            "ucc": "49045",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "Audi S4",
+            "ucc": "49046",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Audi Allroad",
+            "ucc": "49049",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "Audi A5",
+            "ucc": "49055",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Audi S5",
+            "ucc": "49056",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Audi RS 5",
+            "ucc": "49059",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Audi A6",
+            "ucc": "49065",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Audi S6",
+            "ucc": "49066",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Audi A7",
+            "ucc": "49075",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Audi S7",
+            "ucc": "49076",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Audi RS 7",
+            "ucc": "49077",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Audi A8",
+            "ucc": "49085",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Audi A8L",
+            "ucc": "49086",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Audi S8",
+            "ucc": "49087",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Audi Q3",
+            "ucc": "49201",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Audi Q5",
+            "ucc": "49205",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Audi Q5 Hybrid",
+            "ucc": "49206",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Audi Q7",
+            "ucc": "49216",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Infiniti G",
+            "ucc": "79006",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Infiniti M",
+            "ucc": "79016",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Infiniti M Hybrid",
+            "ucc": "79017",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Infiniti Q",
+            "ucc": "79026",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Infiniti EX",
+            "ucc": "79206",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Infiniti FX",
+            "ucc": "79216",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Infiniti JX",
+            "ucc": "79226",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Infiniti QX",
+            "ucc": "79236",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Volvo C30",
+            "ucc": "50036",
+            "segment": "Specialty Coupe"
+        },
+        {
+            "name": "Volvo S40",
+            "ucc": "50046",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Volvo V50",
+            "ucc": "50056",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "Volvo S60",
+            "ucc": "50066",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Volvo V60",
+            "ucc": "50067",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "Volvo C70",
+            "ucc": "50076",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Volvo V70",
+            "ucc": "50080",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "Volvo S80",
+            "ucc": "50086",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Volvo XC60",
+            "ucc": "50206",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Volvo XC70",
+            "ucc": "50216",
+            "segment": "Luxury Multi-Function"
+        },
+        {
+            "name": "Volvo XC90",
+            "ucc": "50226",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Subaru Impreza",
+            "ucc": "80006",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Subaru Impreza Outback Sport",
+            "ucc": "80011",
+            "segment": "Mid-Size Multi-Function"
+        },
+        {
+            "name": "Subaru Impreza WRX",
+            "ucc": "80016",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Subaru WRX",
+            "ucc": "80017",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Subaru WRX STI",
+            "ucc": "80018",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Subaru BRZ",
+            "ucc": "80026",
+            "segment": "Specialty Coupe"
+        },
+        {
+            "name": "Subaru Legacy",
+            "ucc": "80036",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Subaru Forester",
+            "ucc": "80206",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Subaru XV Crosstrek",
+            "ucc": "80216",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Subaru Outback",
+            "ucc": "80226",
+            "segment": "Mid-Size Multi-Function"
+        },
+        {
+            "name": "Subaru Tribeca",
+            "ucc": "80236",
+            "segment": "Mid-Size Crossover Utility"
+        },
+        {
+            "name": "Scion iQ",
+            "ucc": "81006",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Scion tC",
+            "ucc": "81016",
+            "segment": "Specialty Coupe"
+        },
+        {
+            "name": "Scion FR-S",
+            "ucc": "81021",
+            "segment": "Specialty Coupe"
+        },
+        {
+            "name": "Scion xB",
+            "ucc": "81026",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Scion xD",
+            "ucc": "81036",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Toyota Yaris",
+            "ucc": "82006",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Toyota Prius",
+            "ucc": "82016",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Toyota Prius c",
+            "ucc": "82017",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Toyota Prius Plug-in",
+            "ucc": "82018",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Toyota Prius v",
+            "ucc": "82019",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Toyota Corolla",
+            "ucc": "82026",
+            "segment": "Small Car"
+        },
+        {
+            "name": "Toyota Matrix",
+            "ucc": "82036",
+            "segment": "Small Multi-Function"
+        },
+        {
+            "name": "Toyota Camry",
+            "ucc": "82046",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Toyota Camry Hybrid",
+            "ucc": "82047",
+            "segment": "Mid-Size Car"
+        },
+        {
+            "name": "Toyota Avalon",
+            "ucc": "82056",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Toyota Avalon Hybrid",
+            "ucc": "82057",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Toyota FJ Cruiser",
+            "ucc": "82206",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Toyota RAV4",
+            "ucc": "82216",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Toyota RAV4 EV",
+            "ucc": "82217",
+            "segment": "Entry Utility"
+        },
+        {
+            "name": "Toyota Venza",
+            "ucc": "82226",
+            "segment": "Mid-Size Crossover Utility"
+        },
+        {
+            "name": "Toyota Highlander",
+            "ucc": "82236",
+            "segment": "Mid-Size Crossover Utility"
+        },
+        {
+            "name": "Toyota Highlander Hybrid",
+            "ucc": "82237",
+            "segment": "Mid-Size Crossover Utility"
+        },
+        {
+            "name": "Toyota 4Runner",
+            "ucc": "82246",
+            "segment": "Mid-Size Traditional Utility"
+        },
+        {
+            "name": "Toyota Sequoia",
+            "ucc": "82256",
+            "segment": "Large Utility"
+        },
+        {
+            "name": "Toyota Land Cruiser",
+            "ucc": "82266",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Toyota Tacoma",
+            "ucc": "82406",
+            "segment": "Standard Pickup"
+        },
+        {
+            "name": "Toyota Tundra",
+            "ucc": "82416",
+            "segment": "Full-Size Pickup"
+        },
+        {
+            "name": "Toyota Sienna",
+            "ucc": "82506",
+            "segment": "Minivan"
+        },
+        {
+            "name": "Lotus Evora",
+            "ucc": "60006",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Lexus CT 200h",
+            "ucc": "83006",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Lexus IS",
+            "ucc": "83016",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Lexus HS Hybrid",
+            "ucc": "83026",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Lexus ES",
+            "ucc": "83036",
+            "segment": "Near-Luxury Car"
+        },
+        {
+            "name": "Lexus ES Hybrid",
+            "ucc": "83037",
+            "segment": null
+        },
+        {
+            "name": "Lexus GS",
+            "ucc": "83046",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Lexus GS Hybrid",
+            "ucc": "83047",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Lexus LS",
+            "ucc": "83056",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Lexus LS Hybrid",
+            "ucc": "83057",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Lexus RC",
+            "ucc": "83066",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Lexus RX",
+            "ucc": "83206",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Lexus RX Hybrid",
+            "ucc": "83207",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Lexus GX",
+            "ucc": "83216",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Lexus LX",
+            "ucc": "83226",
+            "segment": "Luxury Utility"
+        },
+        {
+            "name": "Lexus NX",
+            "ucc": "83236",
+            "segment": "Near-Luxury Utility"
+        },
+        {
+            "name": "Ferrari 458 Italia",
+            "ucc": "61006",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Ferrari 458 Speciale",
+            "ucc": "61007",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Ferrari California",
+            "ucc": "61016",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Ferrari FF",
+            "ucc": "61026",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Ferrari F12 Berlinetta",
+            "ucc": "61036",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Maserati Quattroporte",
+            "ucc": "62006",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Maserati Ghible",
+            "ucc": "62016",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Maserati Granturismo",
+            "ucc": "62026",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Lamborghini Aventador",
+            "ucc": "63006",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Lamborghini Gallardo",
+            "ucc": "63016",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Lamborghini Huracan",
+            "ucc": "63026",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Rolls-Royce Ghost",
+            "ucc": "64006",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Rolls-Royce Phanom Drophead",
+            "ucc": "64016",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "Rolls-Royce Phanom",
+            "ucc": "64026",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Rolls-Royce Wraith",
+            "ucc": "64036",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Bentley Flying Spur",
+            "ucc": "68006",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Bentley Continental",
+            "ucc": "68016",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Bentley Musanne",
+            "ucc": "68026",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Aston Martin DB9",
+            "ucc": "69006",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Aston Martin Rapide",
+            "ucc": "69016",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Aston Martin Vanquish",
+            "ucc": "69026",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "Aston Martin Vantage",
+            "ucc": "69036",
+            "segment": "Luxury Car"
+        },
+        {
+            "name": "McLaren MP4-12C",
+            "ucc": "70006",
+            "segment": "Premium Convertible/Roadster"
+        },
+        {
+            "name": "McLaren 650S",
+            "ucc": "70007",
+            "segment": "Exotic Car Segment"
+        }
+    ];
+
 
     this.getModels = function () {
         return models;
