@@ -1,9 +1,19 @@
 .summary-section {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 10px;
+}
+
+.obs-header {
+    margin: 30px;
+    margin-top: 70px;
 }
 
 .list-group-condensed .list-group-item {
     padding: 6px;
+}
+
+.opportunity-panel{
+    width: 655px;
+    margin: 0 auto;
 }
