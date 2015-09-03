@@ -1,0 +1,12 @@
+<table class="table table-condensed table-bordered table-hover">
+    <thead>
+    <tr>
+        <th ng-repeat="cell in table[0]">{{cell}}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="row in table | skip:1">
+        <td ng-repeat="cell in row">{{cell}}</td>
+    </tr>
+    </tbody>
+</table>

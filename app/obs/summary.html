@@ -1,4 +1,4 @@
-<div class="panel panel-info" style="margin:40px;">
+<div class="panel panel-info obs-header">
     <div class="panel-body">
         <div class="row">
 
@@ -27,85 +27,93 @@
 
 <div class="row summary-section">
     <div class="col-md-4">
-        <div class="panel panel-default">
-            <table class="table table-condensed table-bordered">
-                <thead>
-                <tr>
-                    <th><b>DEMOGRAPHICS</b></th>
-                    <th>{{summary.model.name}}</th>
-                    <th>Segment</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>321</td>
-                    <td>321</td>
-                    <td>321</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
+        <div class="panel panel-default" table="summary.demographics"></div>
     </div>
     <div class="col-md-4">
-        <div class="panel panel-info">
-            <table class="table table-condensed table-bordered">
-                <thead>
-                <tr>
-                    <th><b>DEMOGRAPHICS</b></th>
-                    <th>{{summary.model.name}}</th>
-                    <th>Segment</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>321</td>
-                    <td>321</td>
-                    <td>321</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
+        <div class="panel panel-info" table="summary.hobbies"></div>
     </div>
     <div class="col-md-4">
-        <div class="panel panel-info">
-            <table class="table table-condensed table-bordered">
-                <thead>
-                <tr>
-                    <th><b>DEMOGRAPHICS</b></th>
-                    <th>{{summary.model.name}}</th>
-                    <th>Segment</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>321</td>
-                    <td>321</td>
-                    <td>321</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
+        <div class="panel panel-info" table="summary.modelImage"></div>
     </div>
 </div>
 <div class="row summary-section">
     <div class="col-md-12">
-        <div class="panel panel-info">
-            <table class="table table-condensed table-bordered">
-                <thead>
-                <tr>
-                    <th><b>ATTITUDES</b></th>
-                    <th>{{summary.model.name}}</th>
-                    <th>Segment</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>321</td>
-                    <td>321</td>
-                    <td>321</td>
-                </tr>
-                </tbody>
-            </table>
+        <div class="panel panel-info" table="summary.attitudes"></div>
+    </div>
+</div>
+
+<div class="row summary-section">
+    <div class="col-md-6">
+        <div class="panel panel-default opportunity-panel">
+            <div class="panel-heading text-center"><b>OPPORTUNITY</b></div>
+            <!-- List group -->
+            <ul class="list-group list-group-condensed">
+                <li class="list-group-item list-group-item-success text-center"><b>Strongest opportunity</b></li>
+                <li class="list-group-item list-group-item-success">Strongest opportunity 1</li>
+                <li class="list-group-item list-group-item-success">Strongest opportunity 2</li>
+                <li class="list-group-item list-group-item-success">Strongest opportunity 3</li>
+                <li class="list-group-item list-group-item-success">Strongest opportunity 4</li>
+                <li class="list-group-item list-group-item-success">Strongest opportunity 5</li>
+
+                <li class="list-group-item list-group-item-warning text-center"><b>Moderate opportunity</b></li>
+                <li class="list-group-item list-group-item-warning">Strongest opportunity 1</li>
+                <li class="list-group-item list-group-item-warning">Strongest opportunity 2</li>
+                <li class="list-group-item list-group-item-warning">Strongest opportunity 3</li>
+                <li class="list-group-item list-group-item-warning">Strongest opportunity 4</li>
+                <li class="list-group-item list-group-item-warning">Strongest opportunity 5</li>
+
+                <li class="list-group-item list-group-item-danger text-center"><b>Weakest opportunity</b></li>
+                <li class="list-group-item list-group-item-danger">Strongest opportunity 1</li>
+                <li class="list-group-item list-group-item-danger">Strongest opportunity 2</li>
+                <li class="list-group-item list-group-item-danger">Strongest opportunity 3</li>
+                <li class="list-group-item list-group-item-danger">Strongest opportunity 4</li>
+                <li class="list-group-item list-group-item-danger">Strongest opportunity 5</li>
+            </ul>
         </div>
+    </div>
+    <div class="col-md-6">
+        <img class="img-responsive " src="media/72681_bjK9ntMhVbnjbx5SvmDPLLwwMhBKYM.png" style="margin: 0 auto;"
+             alt="">
+    </div>
+</div>
+
+<div class="row summary-section">
+    <div class="col-md-6">
+        <div class="panel panel-default" table="summary.purchase"></div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-info" table="summary.considered"></div>
+    </div>
+</div>
+<div class="row summary-section">
+    <div class="col-md-6">
+        <div class="panel panel-default" table="summary.loved"></div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-info" table="summary.sales"></div>
+    </div>
+</div>
+<div class="row summary-section">
+    <div class="col-md-6">
+        <div class="panel panel-default" table="summary.loyalty"></div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-info" table="summary.rejection"></div>
+    </div>
+</div>
+<div class="row summary-section">
+    <div class="col-md-6">
+        <div class="panel panel-default" table="summary.crossshoping"></div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-info" table="summary.activeDefection"></div>
+    </div>
+</div>
+<div class="row summary-section">
+    <div class="col-md-6">
+        <div class="panel panel-default" table="summary.defection"></div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-info" table="summary.passivedefection"></div>
     </div>
 </div>
