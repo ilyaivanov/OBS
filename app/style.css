@@ -6,7 +6,6 @@
 
 .obs-header {
     margin: 30px;
-    margin-top: 70px;
 }
 
 .list-group-condensed .list-group-item {
@@ -16,4 +15,8 @@
 .opportunity-panel{
     max-width: 655px;
     margin: 0 auto;
+}
+
+thead{
+    background-color: #8cd8ff;
 }
